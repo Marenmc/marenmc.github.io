@@ -1,12 +1,14 @@
 body {
-  background: lightblue;
+  background: #F0F8FF;
   max-width: 960px;
+  position: relative;
   margin: auto;
+  padding: 30px;
 }
 
 
 h1 {
-  text-shadow:2px 1px gray;
+  text-shadow:2px 1px #008B8B;
 }
 
 #intro-text {
@@ -14,33 +16,60 @@ h1 {
 
 }
 
-#picture-block {
-  margin: auto;
-
-
-}
-
 img {
   width: 315px;
-  border-top-color: gray;
-  border-top-width: 10px;
+  position: relative;
+}
+
+@media screen and (max-width: 704px) {
+  img {
+    width:100%;
+  }
 }
 
 #survey {
   padding: 8px
-  border: 2px;
-  border-color: gray;
+  border: 2px #ADD8E6;
   width: 60%;
   margin: auto;
 
 }
 
+.image {
+   position: relative;
+   display: inline-block;
+}
+
+h3 {
+   position: absolute;
+   top: 270px;
+   left: 40;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
+
 blockquote {
-  border-left: 10px solid blue;
+  border-left: 10px solid #008B8B;
   padding-left: 15px;
   padding-top: 2px;
   padding-bottom: 2px;
   margin-left: 10px;
-  color: blue;
+  color: #008B8B;
   width: 100%;
+}
+
+/* unvisited link */
+a:link {
+    color: blue;
+}
+
+/* visited link */
+a:visited {
+    color: purple;
+}
+
+/* mouse over link */
+a:hover {
+    color: darkcyan;
 }
